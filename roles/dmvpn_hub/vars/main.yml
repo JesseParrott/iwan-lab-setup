@@ -1,0 +1,3 @@
+tunnel_interface: "Tunnel0"
+hub_ip: "172.16.1.1"
+nbma_ip: "10.10.10.1"
