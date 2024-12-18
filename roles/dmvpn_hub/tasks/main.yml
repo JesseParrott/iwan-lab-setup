@@ -1,0 +1,12 @@
+---
+- name: Configure DMVPN Hub Tunnel
+  ios_config:
+    lines:
+      - "interface {{ tunnel_interface }}"
+      - "ip address {{ hub_ip }} 255.255.255.0"
+      - "tunnel source GigabitEthernet0/0"
+      - "tunnel mode gre multipoint"
+      - "ip nhrp authentication mynetwork"
+      - "ip nhrp map multicast dynamic"
+      - "ip nhrp network-id 1"
+      - "no shut"
