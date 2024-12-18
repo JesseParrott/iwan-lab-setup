@@ -1,0 +1,10 @@
+all:
+  children:
+    iwan:
+      hosts:
+        isr_hub:
+          ansible_host: 10.0.0.40
+          ansible_user: admin
+          ansible_password: test
+          ansible_network_os: ios
+          ansible_connection: network_cli
