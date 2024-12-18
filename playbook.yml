@@ -1,0 +1,6 @@
+---
+- name: Setup DMVPN Hub
+  hosts: iwan
+  gather_facts: no
+  roles:
+    - dmvpn_hub
